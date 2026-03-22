@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Robo Class Nepal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/navbar/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/navbar/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/navbar/favicon-16x16.png">
+    <link rel="manifest" href="images/navbar/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/navbar/logo.jpg" alt="Robo Class Nepal">
+                <div class="logo-text">
+                    <h1>Robo Class</h1>
+                    <span>NEPAL</span>
+                </div>
+            </div>
+            
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#programs">Programs <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#robotics" onclick="showServiceDetails('robotics')">Robotics Training</a></li>
+                            <li><a href="#steam" onclick="showServiceDetails('steam')">STEAM Training</a></li>
+                            <li><a href="#webdev" onclick="showServiceDetails('web-development')">Web Development</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1 data-aos="fade-down">About Us</h1>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-up" data-aos-delay="200">
+                        <h2>Empowering Nepal's Future Through Technology</h2>
+                        <p data-aos="fade-up" data-aos-delay="300">Robo Class Nepal is a group of qualified engineers and tech enthusiasts formed with the mindset and slogan "Let's Bring Technology Beyond The Text Books".</p>
+                        <p data-aos="fade-up" data-aos-delay="400">We primarily focus on various technical-learning aspects and skills development through practical approach rather than theoretical and bookish learning methods.</p>
+                        <p data-aos="fade-up" data-aos-delay="500">We strive to be committed to the community we are privileged to serve, with our dedicated team, talented faculty and staff. We take pride in having the most active and helpful group of partners, visionary parents, well-wishers, and friends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2 class="team-title" data-aos="fade-down">Meet Our Team</h2>
+                <p class="team-subtitle" data-aos="fade-up" data-aos-delay="200">The passionate individuals behind Robo Class Nepal</p>
+                
+                <div class="team-grid">
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-image">
+                            <img src="images/gallery/sabin.jpg" alt="Team Member">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>someone</h3>
+                            <span class="position">Chairman/Founder</span>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-image">
+                            <img src="images/gallery/avatar.jpeg" alt="Team Member">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>someone</h3>
+                            <span class="position">Managing Director</span>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member-image">
+                            <img src="images/gallery/avatar.jpeg" alt="Team Member">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>someone</h3>
+                            <span class="position">Chief Executive Officer</span>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+                        <div class="member-image">
+                            <img src="images/gallery/avatar.jpeg" alt="Team Member">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>someone</h3>
+                            <span class="position">Executive Director</span>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="500">
+                        <div class="member-image">
+                            <img src="images/gallery/avatar.jpeg" alt="Team Member">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>someone</h3>
+                            <span class="position">Chief Technical Officer</span>
+                        </div>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="600">
+                        <div class="member-image">
+                            <img src="images/gallery/avatar.jpeg" alt="Team Member">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>someone</h3>
+                            <span class="position">Chief Operation Officer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about" data-aos="fade-right">
+                    <h3>Robo Class Nepal</h3>
+                    <p>Empowering Nepal's youth through technology education</p>
+                </div>
+                <div class="footer-links" data-aos="fade-up">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="connect-with-us" data-aos="fade-left">
+                    <h2>Connect<span> With Us</span></h2>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Robo Class Nepal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="theme-toggle">
+        <i class="fas fa-sun"></i>
+    </button>
+</body>
+</html> 

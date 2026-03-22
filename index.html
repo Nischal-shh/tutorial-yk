@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo ClassNepal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/navbar/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/navbar/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/navbar/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/navbar/logo.jpg" alt="Robo Class Nepal">
+                <div class="logo-text">
+                    <h1>Robo Class Nepal</h1>
+                    <span></span>
+                </div>
+            </div>
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#programs">Programs <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#robotics" onclick="showServiceDetails('robotics')">Robotics Training</a></li>
+                            <li><a href="#steam" onclick="showServiceDetails('steam')">STEAM Training</a></li>
+                            <li><a href="#webdev" onclick="showServiceDetails('web-development')">Web Development</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-grid">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="animate-text" data-aos="fade-up" data-aos-delay="200">Innovate.</h2>
+                    <h2 class="animate-text" data-aos="fade-up" data-aos-delay="400">Create.</h2>
+                    <h2 class="animate-text" data-aos="fade-up" data-aos-delay="600">Automate.</h2>
+                    <p data-aos="fade-up" data-aos-delay="800">Transform your passion for robotics into real-world skills...</p>
+                    <div class="stats">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="900">
+                            <span class="number">500+</span>
+                            <span class="label">Students Trained</span>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="1000">
+                            <span class="number">50+</span>
+                            <span class="label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="1100">
+                            <span class="number">15+</span>
+                            <span class="label">Expert Mentors</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="floating-cards">
+                        <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-robot"></i>
+                            <span>Robotics</span>
+                        </div>
+                        <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fas fa-microchip"></i>
+                            <span>Arduino</span>
+                        </div>
+                        <div class="tech-card" data-aos="zoom-in" data-aos-delay="600">
+                            <i class="fas fa-code"></i>
+                            <span>Coding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission">
+            <div class="mission-content" data-aos="fade-up">
+                <span class="subtitle" data-aos="fade-up">OUR MISSION</span>
+                    <h2 data-aos="fade-up" data-aos-delay="100">Empowering Nepal's Future</h2>
+                <p class="mission-intro" data-aos="fade-up" data-aos-delay="200">At Robo Class Nepal, we're dedicated to nurturing the next generation of tech innovators. Through hands-on learning and cutting-edge programs, we're bridging the technology gap and preparing Nepali youth for the digital future.</p>
+                <div class="mission-cards">
+                    <div class="mission-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>Fostering creative thinking and innovative solutions through hands-on learning.</p>
+                    </div>
+                    <div class="mission-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>Building a strong community of tech enthusiasts and future innovators.</p>
+                    </div>
+                    <div class="mission-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Excellence</h3>
+                        <p>Striving for excellence in technology education and skill development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="services-portfolio">
+            <div class="section-header" data-aos="fade-down">
+                <h2>Our Services</h2>
+                <p class="subtitle">Comprehensive Technology Education Programs</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-image" data-aos="fade-right">
+                    <img src="images/gallery/Class.JPG" alt="Students working on robotics project">
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-left" data-aos-delay="200">
+                        <div class="icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Robotics Training</h3>
+                        <p>Learn robotics fundamentals, Arduino programming, sensor integration, and mechanical design through hands-on projects.</p>
+                        <button class="learn-more-btn" onclick="showServiceDetails('robotics')">Start Robotics</button>
+                    </div>
+
+
+                    <div class="service-card" data-aos="fade-left" data-aos-delay="300">
+                        <div class="icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Learn modern web technologies including HTML, CSS, JavaScript, and responsive design principles.</p>
+                        <button class="learn-more-btn" onclick="showServiceDetails('web-development')">Explore Web Dev</button>
+                    </div>
+                    
+                    
+                    <div class="service-card" data-aos="fade-left" data-aos-delay="400">
+                        <div class="icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>STEAM Training</h3>
+                        <p>Integrated approach to Science, Technology, Engineering, Arts, and Mathematics.</p>
+                        <button class="learn-more-btn" onclick="showServiceDetails('steam')">Experience STEAM</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-header" data-aos="fade-down">
+                    <h2>Our Classes in Action</h2>
+                </div>
+                <p class="subtitle" data-aos="fade-up">Witness the journey of innovation and learning</p>
+                
+                <div class="gallery-categories" data-aos="fade-up">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="robotics">Robotics</button>
+                    <button class="category-btn" data-category="steam">STEAM</button>
+                    <button class="category-btn" data-category="coding">Coding</button>
+                </div>
+
+                <div class="gallery-masonry">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/gallery/Class.JPG" alt="Robotics Workshop">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>Robotics Workshop</h3>
+                                <p>Students building their first robot</p>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Main Lab</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item large" data-category="steam" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="images/gallery/Class.JPG" alt="STEAM Project">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>STEAM Innovation</h3>
+                                <p>Creative problem-solving in action</p>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Innovation Hub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item vertical" data-category="coding" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="images/gallery/Class.JPG" alt="Coding Session">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>Code Masters</h3>
+                                <p>Learning the art of programming</p>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Computer Lab</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="robotics" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="images/gallery/Class.JPG" alt="Robot Testing">
+                        <div class="item-overlay">
+                            <div class="item-content">
+                                <h3>Testing Phase</h3>
+                                <p>Fine-tuning robotic movements</p>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Testing Arena</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header" data-aos="fade-down">
+                    <h2>What Our Students Say</h2>
+                </div>
+                <p class="subtitle" data-aos="fade-up">Hear from our amazing community</p>
+                
+                <div class="swiper testimonials-slider" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="review-text">"The robotics program here is exceptional! I learned so much about Arduino programming and mechanical design. The hands-on projects really helped me understand complex concepts."</p>
+                                <div class="reviewer">
+                                    <div class="reviewer-avatar">
+                                        <img src="images/gallery/sabin.jpg" alt="sabin">
+                                    </div>
+                                    <div class="reviewer-info">
+                                        <h4>Ram Sharma</h4>
+                                        <span>Robotics Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="review-text">"STEAM training opened up a whole new world of possibilities. The integrated approach to science and technology helped me develop critical thinking skills. The instructors are amazing!"</p>
+                                <div class="reviewer">
+                                    <div class="reviewer-avatar">
+                                        <img src="images/gallery/avatar.jpeg" alt="Student Avatar">
+                                    </div>
+                                    <div class="reviewer-info">
+                                        <h4>Sita Patel</h4>
+                                        <span>STEAM Program Graduate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="review-text">"The web development course was comprehensive and practical. I went from knowing nothing to building full-stack applications. Now I'm working as a junior developer!"</p>
+                                <div class="reviewer">
+                                    <div class="reviewer-avatar">
+                                        <img src="images/gallery/avatar.jpeg" alt="Student Avatar">
+                                    </div>
+                                    <div class="reviewer-info">
+                                        <h4>Hari Thapa</h4>
+                                        <span>Web Development Graduate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="review-text">"The project-based learning approach made complex programming concepts easy to grasp. The mentors were always available to help and guide us through challenges."</p>
+                                <div class="reviewer">
+                                    <div class="reviewer-avatar">
+                                        <img src="images/gallery/avatar.jpeg" alt="Student Avatar">
+                                    </div>
+                                    <div class="reviewer-info">
+                                        <h4>Priya Gurung</h4>
+                                        <span>Programming Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="review-text">"The Arduino workshops were fantastic! I never thought I could build my own smart home devices. The practical experience gained here is invaluable for my future career."</p>
+                                <div class="reviewer">
+                                    <div class="reviewer-avatar">
+                                        <img src="images/gallery/avatar.jpeg" alt="Student Avatar">
+                                    </div>
+                                    <div class="reviewer-info">
+                                        <h4>Anil KC</h4>
+                                        <span>IoT Enthusiast</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 6 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="review-text">"The combination of arts and technology in the STEAM program helped me develop both creative and technical skills. It's a unique approach that sets this institute apart."</p>
+                                <div class="reviewer">
+                                    <div class="reviewer-avatar">
+                                        <img src="images/gallery/avatar.jpeg" alt="Student Avatar">
+                                    </div>
+                                    <div class="reviewer-info">
+                                        <h4>Maya Shrestha</h4>
+                                        <span>Creative Tech Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Add navigation -->
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-down">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-form" data-aos="fade-right">
+                        <form id="contactForm" class="contact-form" onsubmit="return sendEmail(event)">
+                            <div class="input-group">
+                                <input required type="text" name="name" autocomplete="off" class="input" id="first-name">
+                                <label class="user-label" for="first-name">Name</label>
+                            </div>
+                    
+                            <div class="input-group">
+                                <input required type="email" name="email" autocomplete="off" class="input" id="email">
+                                <label class="user-label" for="email">Email</label>
+                            </div>
+                    
+                            <div class="input-group">
+                                <textarea required name="message" autocomplete="off" class="input" id="message" rows="4"></textarea>
+                                <label class="user-label" for="message">Message</label>
+                            </div>
+                            
+                            <button type="submit" id="submitBtn">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info" data-aos="fade-left">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+977 98XXXXXXXX</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@roboclassnepal.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about" data-aos="fade-right">
+                    <h3>Robo Class Nepal</h3>
+                    <p>Empowering Nepal's youth through technology education</p>
+                </div>
+                <div class="footer-links" data-aos="fade-up">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="connect-with-us" data-aos="fade-left">
+                    <h2>Connect<span> With Us</span></h2>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Robo Class Nepal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="theme-toggle">
+        <i class="fas fa-sun"></i>
+    </button>
+
+</body>
+</html>
